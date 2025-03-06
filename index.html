@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vaaradhi Farms</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <style>
+         body{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+                height: 100vh;
+            }
+            .sentences{
+             background-color:green;
+            text-align: center;
+            padding: 20px 0;
+            overflow: hidden;
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            height: 18px;
+            z-index: 100; 
+           
+}
+
+.sentence {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.sentence.active {
+  opacity: 1;
+}
+    
+            h2{
+                margin: 0px; 
+                font-size: 17px;
+                font-weight: bold;
+                font-family:Times New Roman;
+                
+            }
+            .parent{
+                height: 100vh;
+            }
+            .head{
+                margin-top: 50px;
+                position: static;
+                left: 0;
+                bottom: 30px;
+                top: 30px;
+                
+            }
+            .header{
+                height: 130px;
+                background-color:rgb(240, 182, 27) ;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 60px;
+               width: 100%;
+                
+                                
+            }
+            
+                
+            
+            .header__logo-image{
+                padding-left: 40px;
+            }
+            .header__menu{
+                display: flex;
+                gap: 40px;
+                
+            }
+            .menu_1{
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+               
+            }
+            
+            .header__icons{
+                display: flex;
+                word-spacing: 20px;
+                padding-right: 40px;
+                
+            }
+            .i1,.i2,.i3{
+                color: black;
+                font-size: 20px;
+             
+            }
+            .vc{
+             background:rgb(240, 182, 27) ; 
+             font-weight: bold;
+             font-family: Times New Roman;
+             font-size:18px ;
+              border-color: rgb(240, 182, 27);
+            }
+           
+
+            .vc1{
+                
+                color: black;
+                background-color:rgb(240, 182, 27) ;
+            }
+            vc1:hover{
+                text-decoration: underline;
+            }
+            
+             
+            
+
+             .img{
+                
+                width: 330px;
+                height:320px;     
+                border-radius: 8px;
+                
+                
+             }
+             
+             .text-subdued{
+                font-size: 17px; 
+                color: gray;
+                margin-left:10px;
+                
+
+             }
+             
+             p{
+                font-family: serif;
+                margin-top: 6px;
+                margin-bottom: 6px;
+                
+             }
+             .ic{
+                color: gold;
+             }
+             .decript{
+                font-size: 43px  ;
+                font-family:sans-serif;
+                padding: 0px;
+                margin-top: 80px;
+                margin-left: 50px;
+                vertical-align: baseline;
+                font-weight: bolder;
+             }
+             .description{
+                display: inline;
+                vertical-align: middle;
+             
+             }
+             .dec1{
+                font-size: 18px;
+                display: inline;
+                margin-left: 50px;
+
+
+
+             }
+             .SD{
+                margin-top: 20px;
+                margin-bottom: 30px;
+                vertical-align: middle;
+             }
+            
+              .image-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                row-gap: 40px;
+                margin-left: 50px;
+                margin-right: 20px;
+                margin-top: 70px;
+             }
+             
+
+            
+            
+            .review{
+                margin-left:10px;
+            }
+            .img-name{
+                margin-left: 20px;
+                font-size: 18px;
+            }
+            .img-dis{
+                text-align: center;
+                margin-right:50px ;
+            }
+           
+            .view-all-button {
+            background-color: #FFC107; 
+             color: black; 
+            padding: 17px 23px;
+            border: none;
+            border-radius: 50px; 
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-flex; 
+            margin-left: 855px;
+        
+           }
+
+       .view-all-button:hover{
+        background-color: #FFD54f;
+        text-decoration: underline;
+       
+       }  
+       .view-all-button .arrow-circle {
+    display: inline-block;
+    width: 18px;
+    height: 19px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #0000001A;
+    margin-left: 10px;
+    margin-top: 2px;
+  }  
+  .view-all-button .arrow-circle:hover{
+    background-color: black;
+    color: white;
+  } 
+  .view-all-products{
+   font-size: 17px;
+   background-color: #FFC027;
+   border-radius: 40px;
+   padding: 17.2px 40px;
+   width: 215px;
+   font-family: serif;
+   color: #000000;
+   border-color: #FFC027;
+   margin: 60px;
+
+  }
+  .view-all-products:hover{
+    background-color: #FFD54f;
+
+  }
+
+  .button-products{
+    display: flex;
+   justify-content: center;
+
+  }
+  .collections{
+    background-color: #25693F;
+    height: 580px;
+    color: white;
+    padding: 70px;
+   
+   }
+   .exp1{
+    font-size:44px ;
+    font-family:sans-serif ;
+    font-weight: bolder;
+    margin-bottom: 35px;
+   }
+   .inf0{
+   margin-left: 100px;
+   }
+   
+   .imgscroll{
+    width: 335px;
+    height:325px;     
+    border-radius: 8px;
+   }
+
+   .images-scrollbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 60px;
+    column-gap: 20px;
+  
+   }
+   .button-collections{
+    text-align: center;
+   }
+   .view-all-collections{
+    background-color:#FFC027 ;
+    font-size: 17px;
+    border-color: #FFC027 ;
+    padding: 20px;
+    padding: 17.2px 42px;
+   width: 240px;
+   font-family: serif;
+   color: #000000;
+   font-weight: bold;
+   border-radius: 50px;
+   margin: 50px;
+  
+   
+
+   }
+   .view-all-collections:hover{
+    background-color: #FFD54f;
+
+  }
+  .ssimages{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 698.23px;
+   
+  }
+  .ss{
+    display: grid;
+    row-gap: 30px;
+    margin-left: 60px;
+    
+ 
+  }
+  .salt{
+    width: 650px;
+    height:300px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    
+  }
+  .sweet{
+    width: 650px;
+    height:300px;
+    border-radius: 30px;
+  }
+  .scrolling-content{
+       
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #25693F;
+    }
+
+    .content {
+      position: relative;
+      width: 100%;
+      height: 118px; 
+      overflow: hidden; 
+      display: flex;
+      align-items: center; 
+    }
+
+    .scrolling-text {
+      position: absolute;
+      font-size: 2em;
+      white-space: nowrap;
+      color: white;
+      transition: transform 0.1s ease-out;
+    }
+     .line1{
+        text-align: center;
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        margin-top: 80px;
+        margin-bottom: 40px;
+     }
+    .honeyimage{
+       margin-left: 100px;
+       
+    }
+    .text-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .text{
+        position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; 
+  font-size: 18px;
+    }
+    .honey-img{
+        width: 250px;
+        height: 390px;
+        margin-left: 100px;
+        margin-right: 30px;
+    }
+    .section-full{
+        display: flex;
+       
+    }
+    .number{
+      margin-left: 110px;
+       font-size: 210px;
+       font-weight: bolder;
+       font-family: sans-serif;
+    }
+    .honey-img1{
+        width: 250px;
+        height: 390px;
+        margin-left: 100px;
+        margin-right: 30px;
+       
+       
+       
+    }
+    .honey-info{
+font-size: 28px;
+font-family: sans-serif;
+font-weight: bolder;
+        margin-left: 0;
+        padding: 0%;
+    }
+.middle-text{
+    margin-left: 60px;
+}
+
+.product-data{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    
+  
+}
+
+
+
+.product-head{
+   font-size: 50px; 
+   font-family: sans-serif;
+   font-weight: bolder;
+   display: flex;
+   margin-left: 30px;
+   position: sticky;
+   margin-top: 299px;
+   
+}
+.productimg{
+    width: 610px;
+    height: 600px;
+    margin-left: 45px;
+}
+.num{
+    
+    margin-top: 24px;
+    margin-left: 32px;
+    font-size: 25px;
+}
+.quantity-selector {
+      display: inline-flex; 
+      border: 1px solid #ccc; 
+     height: 47px;
+      display: flex;
+      justify-content:space-evenly;
+      width: 134px;
+      border-radius: 30px;
+      margin-left: 30px;
+}
+    .quantity-btn {
+      background-color: transparent; 
+      border: none; 
+      font-size: 1.2em; 
+      padding: 5px 15px; 
+      cursor: pointer; 
+      
+    }
+    .quantity-btn1 {
+      background-color: transparent; 
+      border: none; 
+      font-size: 1.0em; 
+      padding: 5px 15px; 
+      cursor: pointer; 
+      margin-top: 2px;
+      
+    }
+    .quant{
+        font-size: 19px;
+        font-family: serif;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .add{
+        background-color: #25693F;
+        color: white;
+        width: 820px;
+        height:50px ;
+        border-radius: 25px;
+        margin-left: 29px;
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-top: 20px;
+    }
+   
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    .gridimg1{
+        display: grid;
+        width: 690px;
+        height: 400px;
+        margin-left: 50px;
+        border-radius: 25px;
+       
+    }
+    .about-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+    .about-us{
+        border: 1px solid #FFB74A;
+        background-color: #FFB74A;
+        border-radius: 20px;
+        width: 700px;
+        margin-left: 15px;
+    }
+    .about1{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 38px;
+    }
+    .about-box{
+        font-size: 18px;
+        margin-top: 40px;
+       text-align: center;
+        line-height: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+
+    }
+    .text3{
+        font-size: 38px;
+        font-weight: bolder;
+        font-family: sans-serif;
+        padding: 55px;
+    }
+    .grid-test{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+
+    }
+    .test-1{
+        border: 1px solid #0000000D;
+        background-color: #0000000D;
+        border-radius: 10px;
+        height: 150px;
+        width: 400px;
+        margin-left: 40px;
+       padding: 30px;
+
+    }
+    .test-2{
+        border: 1px solid #0000000D;
+        background-color: #0000000D;
+        border-radius: 10px;
+        height: 150px;
+        width: 400px;
+        padding: 30px;
+        margin-left: 20px;
+      
+
+    }
+    .test-3{
+        border: 1px solid #0000000D;
+        background-color: #0000000D;
+        border-radius: 10px;
+        height: 150px;
+        width: 400px;
+        padding: 30px;
+       
+       
+
+       
+
+    }
+    .c11{
+        font-size: 18px;
+        color: gray;
+        margin-top: 10px;
+        font-family: sans-serif;
+
+    }
+    .c22{
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 15px;
+        font-family: sans-serif;
+    }
+    .c33{
+        font-size: 17px;
+        margin-top: 20px;
+        font-family: serif;
+    }
+    .faq-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #25693F;
+        padding: 70px 48px;
+        margin-top: 80px;
+    }
+    .faq1{
+        color: white;
+        font-size: 40px;
+        font-weight: bolder;
+        font-family: serif;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    .faq{
+        color: white;
+        font-size: 20px;
+        font-family: serif;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    .faq-que{
+        border: 1px solid #F8C027;
+        background-color: #F8C027;
+        padding: 30px;
+        border-radius: 20px;
+       
+    }
+    .fah{
+        height: 1px;
+        border: none;
+        background-color: #00000062;
+
+    }
+    .fa1{
+        color: #000000;
+        font-weight: bold;
+        margin-top: 30px;
+        font-size: 19px;
+    }
+    .faq-que .arrow1{
+    display: inline-block;
+    width: 18px;
+    height: 19px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #0000001A;
+    margin-left: 250px;
+    margin-top: 2px;
+    
+  }  
+  .arrow1:hover{
+    background: black;
+    cursor: pointer;
+    color: white;
+  } 
+  .faq-que .arrow3{
+    display: inline-block;
+    width: 18px;
+    height: 19px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #0000001A;
+    margin-left: 272px;
+    margin-top: 2px;
+    
+  }  
+  .arrow3:hover{
+    background: black;
+    cursor: pointer;
+    color: white;
+  } 
+  .faq-que .arrow2{
+    display: inline-block;
+    width: 18px;
+    height: 19px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #0000001A;
+    margin-left: 300px;
+    margin-top: 2px;
+    
+  }  
+  .arrow2:hover{
+    background: black;
+    cursor: pointer;
+    color: white;
+  }
+  .f-sec{
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+  } 
+  .videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   padding: 0;
+   margin: 0;
+    
+    
+  }
+  .v-img{
+    width: 232px;
+    height:414px;
+    border-radius: 5px;
+    
+  }
+  .vimg1{
+    margin-left: 50px;
+    margin-right: 5px;
+  }
+  .vimg2{
+    margin-right: 50px;
+  }
+  .footer-section{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #F8C027;
+    margin-top: 100px;
+    height: 1000px;
+  }
+  .cc{
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  .cc1{
+    font-size: 18px;
+  }
+  .p2{
+    line-height: 30px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.612);
+  }
+  .contact{
+    margin-top: 73px;
+  }
+  .p3{
+    color:rgba(0, 0, 0, 0.612) ;
+   
+  }
+  .cont{
+    font-size: 19px;
+  }
+  .address{
+    margin-top: 30px;
+  }
+  .insta{
+    font-size: 30px;
+    margin-left: 60px;
+  }
+  .end{
+    margin-top: 60px;
+    margin-left: 60px;
+    color: rgba(0, 0, 0, 0.612);
+  }
+
+       </style>
+   
+ </head>
+ <body>
+    <div class="sentences">
+        <div  class="top">
+            <div class="sentence" id="sentence1">Free Shipping On All Orders Above ₹999</div>
+            <div class="sentence" id="sentence2">Over 55,169+ Happy Customers & Counting</div>
+        </div>
+           <script>
+            const sentences = document.querySelectorAll('.sentence');
+            let index = 0;
+            
+            function rotateSentences() {
+              sentences.forEach((sentence) => sentence.classList.remove('active')); 
+              sentences[index].classList.add('active'); 
+            
+              index = (index + 1) % sentences.length; 
+            
+              setTimeout(rotateSentences, 3000);
+            }
+            
+            rotateSentences(); 
+            </script>
+    </div> 
+       
+        <div class="head">
+            <div class="header-section" >
+                <div class="header">
+                    <div class="header__logo"> 
+                      <img src="//vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp;width=1330" alt="" srcset="//vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp;width=300 300w, //vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp;width=450 450w" width="150" height="100" sizes="150px" class="header__logo-image">
+                    </div>
+                    <div class="header__menu">
+                     <a href="#" class="menu_1">Home</a>
+                       <a href="#" class="menu_2"></a>
+                        <select class="vc" >    
+                        <option value="">View Collecton</option>
+                        <option value="honey">Honey</option> 
+                        <option value="Ghee">Ghee</option> 
+                        <option value="honey">Pickels</option> 
+                        <option value="honey">Seeds</option> 
+                        <option value="honey">Sweets & Snacks</option> 
+                        <option value="honey">Sweetner and Salts</option> 
+                        <option value="honey">Cerels</option> 
+                        <option value="honey">Millets</option> 
+                        <option value="honey">Oils</option> 
+                        <option value="honey">Pulses</option>
+                        <option value="honey">Rice</option> 
+                       </select>
+                        <a href="#" class="menu_1">Shop all</a>
+                        <a href="#" class="menu_1">FAQ</a>
+                        <a href="#" class="menu_1">Track Your Order</a>
+                        <a href="#" class="menu_1">Contact US</a>
+                    </div>
+                    <div class="header__icons">
+                        <div class="icons" >
+                            <i class="fa fa-search i1"></i>
+                            <i class="fa fa-user i2" ></i>
+                            <i class="fa fa-shopping-basket i3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+                 <div class="img-large">
+                 <img src="https://vaaradhifarms.com/cdn/shop/files/varadhi_farms_honey_-v1_-_web_final.jpg?v=1733085382&width=1520">  
+                </div>
+         
+        <div class="decription">
+            <div class="decript">Shop Our Customers Favorite</div>
+            <div class="SD">
+                <div class="dec1">These are Our Best Sellers You’ll Fall in Love With Too</div>
+                <button class="view-all-button">View All
+                    <span class="arrow-circle">></span>
+                </button>
+            </div>
+        </div>
+    
+    <div class="image-grid">
+        <div class="image-preview">
+            <div>
+                <img class="img" src=" https://vaaradhifarms.com/cdn/shop/files/Ghee_HighRes.jpg?v=1698928244&width=500"  >
+            </div>
+            <div class="img-dis" >
+               <p class="img-name"><strong> A2 Desi Cow Cultured Ghee</strong> </p>
+                <p  style="color: red;
+                           font-size: 18px;">From Rs. 925.00 <strike class="text-subdued">Rs. 1,000.00</strike></p> 
+               <p class="review">121 reviews<i class="fa fa-star ic"></i></p>
+            </div>    
+       </div>
+       <div class="image-preview">
+        <div>
+            <img class="img" src="https://vaaradhifarms.com/cdn/shop/files/Honey2.png?v=1698854744& ">
+        </div>
+        <div class="img-dis">
+           <p class="img-name"><strong> Farm Fresh Raw Natural Honey</strong> </p>
+           <p class="text-subdued">From Rs. 475.00 </p> 
+         <p class="review">2119 reviews
+            <i class="fa fa-star ic"></i></p>
+        </div>    
+    </div><div class="image-preview">
+        <div>
+            <img class="img" src="https://vaaradhifarms.com/cdn/shop/files/WhatsAppImage2024-04-26at1.21.52AM.jpg?v=1714074796&width=500">
+        </div>
+        <div class="img-dis">
+           <p class="img-name"><strong> Wild Raw Forest Honey</strong> </p>
+           <p class="text-subdued">From Rs. 575.00 </p> 
+ 
+           <p class="review">505 reviews<i class="fa fa-star ic"></i></p>
+        </div>    
+    </div><div class="image-preview">
+        <div>
+            <img class="img" src="https://vaaradhifarms.com/cdn/shop/files/Adityark_a_bag_of_a_tan_colored_product_filled_with_turmeric_ki_30bdb482-db0c-4404-8b6c-cb59bec40502.png?v=1685016262&width=500"  >
+        </div>
+        <div class="img-dis">
+           <p class="img-name"><strong>Small bee forest honey</strong> </p>
+           <p class="text-subdued"> Rs. 1249.00 </p>
+           <p class="review">74 reviews<i class="fa fa-star ic"></i></p>
+        </div>    
+    </div><div class="image-preview">
+        <div>
+        <img class="img" src="https://vaaradhifarms.com/cdn/shop/files/vaaradhi_farms.jpg?v=1733113339&width=500"  >
+        </div>
+        <div class="img-dis">
+           <p class="img-name"><strong> Forest Turmeric Powder</strong> </p>
+           <p class="text-subdued"> Rs. 300.00 </p>
+           <p class="review">18 reviews<i class="fa fa-star ic"></i></p>
+        </div>    
+    </div><div class="image-preview">
+        <div>
+        <img class="img" src="https://vaaradhifarms.com/cdn/shop/files/WhatsAppImage2024-03-26at7.23.32PM.jpg?v=1711461650&width=500"  >
+        </div>
+        <div class="img-dis">
+           <p class="img-name"><strong>Unprocessed Natural Turmeric</strong> </p>
+           <p class="text-subdued">From Rs. 199.00 </p>
+           <p class="review">341 reviews<i class="fa fa-star ic"></i></p>
+        </div>    
+    </div><div class="image-preview">
+        <div>
+        <img class="img" src="https://vaaradhifarms.com/cdn/shop/files/WhatsApp_Image_2024-09-24_at_11.20.47_PM.jpg?v=1727416947&width=500"  >
+        </div>
+        <div class="img-dis">
+           <p class="img-name"><strong> Lakshman Phal Juice</strong> </p>
+           <p class="text-subdued"> Rs. 780.00 </p>
+           <p class="review">127 reviews<i class="fa fa-star ic"></i></p>
+        </div>    
+    </div><div class="image-preview">
+        <div>
+        <img class="img" src="https://vaaradhifarms.com/cdn/shop/files/tor.hov_pile_of_dry_saffron_threads_fills_up_frame_pleasing_mac_214b13c2-e76a-43f8-bc20-93d017b80b1e.png?v=1705982784&width=500"  >
+        </div>
+        <div class="img-dis">
+           <p class="img-name"><strong> Jaggery Powder</strong> </p>
+           <p class="text-subdued">Rs. 160.00 </p>
+           <p class="review">121 reviews<i class="fa fa-star ic"></i></p>
+        </div>    
+    </div>
+  </div>
+</div>
+<div class="button-products">
+   <button class="view-all-products">View All Products</button>
+</div>
+  <div class="collections">
+    <p class="exp1">Explore Our Collections</p>
+     <p class="info" > Find Your Favourites From Our Wide Range Of Categories </p>
+     <div class="images-scrollbar">
+        <div class="imgsb">
+            <img  class="imgscroll" src="https://vaaradhifarms.com/cdn/shop/files/vaaradhi_farms.jpg?v=1733113339&width=500" >
+        </div>
+        <div class="imgsb">
+            <img  class="imgscroll" src="https://vaaradhifarms.com/cdn/shop/files/ecommified_Front-facing_close-up_eye-level_shot_of_a_plain_flat_22ecbd0e-a868-400f-851a-1b171609766c.png?v=1732686759&width=500">
+        </div>
+        <div class="imgsb">
+            <img  class="imgscroll" src="https://vaaradhifarms.com/cdn/shop/files/pickle_collection_image_-_v1.png?v=1732697129&width=500" >
+        </div>
+        <div class="imgsb">
+            <img  class="imgscroll" src="https://vaaradhifarms.com/cdn/shop/files/sweet_and_snacks.jpg?v=1732699427&width=500" >
+        </div>
+ </div>
+ <div class="button-collections">
+    <button class="view-all-collections">View All Collection's</button>
+  </div>
+</div>
+
+    <div class="ssimages">
+        <div class="ss">
+            
+        <img  class="sweet"  src="https://vaaradhifarms.com/cdn/shop/files/sweetner_and_salts_collection_image_varadhi_farms.jpg?v=1733114639&width=1000">
+    
+    
+        <img class="salt" src="https://vaaradhifarms.com/cdn/shop/files/seeds_collection_image_varadhi_farms-1.jpg?v=1733116981&width=1000">
+    </div>
+        <div class="oils" style="display:grid;
+        margin-left: 30px;
+        margin-right: 50px;
+        justify-content: end;">
+            <img style="border-radius: 40px;
+                       display: inline-block;
+                         width: 730px;
+                         height: 630px;" src="https://vaaradhifarms.com/cdn/shop/files/Varadhi_farms_v1_oil_section_image-3.jpg?v=1733085809&width=600 ">
+         </div>
+         
+    
+    </div>
+    <div class="scrolling-content">
+    <div class="content">
+        <div class="scrolling-text"> Free Shipping On Orders Above 999</div>
+        <div class="scrolling-text"> Free Shipping On Orders Above 999</div>
+        <div class="scrolling-text"> Free Shipping On Orders Above 999</div>
+        <div class="scrolling-text"> Free Shipping On Orders Above 999</div>
+
+    </div>
+    
+      <script>
+        window.addEventListener('scroll', function() {
+          const scrollPosition = window.scrollY;
+          const scrollingText = document.querySelector('.scrolling-text');
+          
+          
+          scrollingText.style.transform = `translateX(${scrollPosition}px)`;
+        });
+      </script>
+      </div>
+    
+    <div class="DYN">
+        <div class="line1">Did You Know? </div>
+    </div>
+       
+    
+       <div class="section-full" >
+      <img  class="honey-img" src="varadhi_farms_text_v1-web-411.png">
+      <div class="middle-text">
+      <span class="number" >90%</span>
+<p class="honey-info">of Honey and Ghee’s use is to Enhance Meals.</p>
+      
+    </div>
+      <img class="honey-img1" src="varadhi_farms_text_v1-web-4.png">
+       </div>
+
+       
+<div class="product-data">
+   
+    <div class="product-img">
+            <img  class="productimg" src="productimg.png" >
+        </div>
+        <div class="product-scroll">
+        <div class="product-head">
+        Product
+        </div>
+        <div class="num">Rs. 40.00</div>
+        <br><hr width="800px">
+        <div class="quant">Quantity:</div>
+        <div class="quantity-selector">
+            <button class="quantity-btn">-</button>
+            <button class="quantity-btn1"> 0 </span>
+            <button class="quantity-btn">+</button>
+        </div>
+        <div class="button-add">
+            <button class="add">Add to Cart</button>
+        </div>
+    </div>     
+</div> 
+
+<div class="grid2">
+    <div class="about-info">
+<div class="grid-img">
+    <img class="gridimg1" src="imagegirl.png">
+    
+</div>
+<div class="about-us">
+   <h2 class="about1">About Us</h2>
+   <p class="about-box">Welcome to Vaaradhi Farms! I am Nethra and I am extremely passionate about healthy living and sustainable food practices.</p>
+
+   <p class="about-box">I am committed to making a positive impact on the world through our business.</p> 
+    
+   <p class="about-box">Thank you for choosing our organic food products, and I look forward to serving you soon.</p> 
+</div>
+</div>
+</div>
+
+<div class="text3">
+   Testimonials
+</div>
+<div class="grid-test">
+    <div class="test-1">
+        <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i>
+        <br>
+        <p class="c11">Ghee</p>
+       <p class="c22">Venkateswara Rao</p>  
+       <p class="c33">Cow Ghee, It's really good. When the quality is not compromised price wouldn't be an issue.</p>
+ </div>
+ <div class="test-2">
+    <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i>
+    <br>
+    <p class="c11">Natural Honey</p>
+   <p class="c22">B.B.</p>  
+   <p class="c33">I just got your natural honey n turmeric feels good to buy organic n original products.</p>
+</div>
+<div class="test-3">
+    <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i> <i class="fa fa-star ic"></i>
+    <br>
+    <p class="c11">Honey And Turmeric</p>
+   <p class="c22">Sri Kavya </p>  
+   <p class="c33">My experience with Vaaradhi Farm's turmeric and honey has been consistently positive.</p>
+</div>
+</div>
+
+<div class="faq-section">
+    <div>
+    <div class="faq1">
+        FAQ
+    </div>
+    <p class="faq">Check out the most common questions our customers asked and if you Still have questions, Contact our customer support.</p>
+   </div>
+    <div class="faq-que">
+        <p class="fa1">How much time does it take for shipping?  <span class="arrow1">></span></p><br>
+        <hr class="fah" >
+        <p class="fa1">Do you accept returns and refunds? <span class="arrow2">></span></p><br>
+        <hr class="fah" >
+        <p class="fa1">What payment gateways do you accept?<span class="arrow3">> </span></p><br>
+    </div>
+</div>
+<div class="f-sec">Follow Us On Instagram</div>
+ <div class="videos">
+    
+  <div class="vimg1"> <img  class="v-img" src="https://scontent.cdninstagram.com/v/t51.71878-15/482332065_945975594362518_3425066518788742052_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=yUERryaPOz4Q7kNvgHWYSE6&_nc_oc=Adhc9-zn0F1WOd1W6QTkhwSoSH7aGscIaqmx7G92e_yWeOr0xdO1hBJLQ8NAT0fdfPc&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AaXPJGi2AdjbU9ulbxkAiH4&oh=00_AYCXx8u-aWyzWtiIopJlpGHxSNo1HoyNPs9Fr1rwyQRUog&oe=67CF66F4"></div>
+  <div> <img  class="v-img" src="https://scontent.cdninstagram.com/v/t51.71878-15/482283387_1874522630009387_5064335285171340432_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=JULD-uOhUhUQ7kNvgE59Vzg&_nc_oc=Adh6aYT7t5fx9OnztO80KrffqR6YCq2cVXYDYoG-VQCLOoE9BEDfb2E8iG0wErT8-Qs&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AaXPJGi2AdjbU9ulbxkAiH4&oh=00_AYDht1hUe3zGl2F8zXOIQowvxW6hEWCZjyeF8sKY45r4PQ&oe=67CF4964"></div>
+ 
+ <div> <img  class="v-img" src="https://scontent.cdninstagram.com/v/t51.71878-15/481606470_3894618637452773_3960611602756707781_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=1-7&_nc_sid=18de74&_nc_ohc=Kq09nyQzWqQQ7kNvgE1KI9Y&_nc_oc=AdjXhIBrTMGLVi61dmioWLYJ2z3zp2EyDl2Fg0q3l8m0zYljpVeCre_k7keqiNlY4Kw&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AaXPJGi2AdjbU9ulbxkAiH4&oh=00_AYDDFLEqZV2K5UZb_oQmA8DFdfktqH6WkMAB2LhPZLbzKA&oe=67CF3FCD"></div>
+
+ <div> <img  class="v-img" src="https://scontent.cdninstagram.com/v/t51.75761-15/481834296_17942624726956143_1635565805335207347_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=1-7&_nc_sid=18de74&_nc_ohc=1DCHd9ZGJd0Q7kNvgHnjD5P&_nc_oc=AdjGOgJRj2zN9p1Zn0pxGidDGFYOSatX9txR6Qx3QiQHBhTbsEaklnz5raY8FAUTPew&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AaXPJGi2AdjbU9ulbxkAiH4&oh=00_AYCTcJv3Ph-h9ol_igin4R2mkIhqizJDN49Ydbpx7JMzxQ&oe=67CF5F67"></div>
+
+<div> <img  class="v-img" src="https://scontent.cdninstagram.com/v/t51.71878-15/476429183_1986059218557536_6456005841124725673_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=BZ5l3IX1fYAQ7kNvgGQqNrR&_nc_oc=AdgPfmZJMLppaBbNnQpxgnuQASrEh0oRQBCh3HERfNkbNwHV1-8xTf1w4zAMLwLecqo&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AaXPJGi2AdjbU9ulbxkAiH4&oh=00_AYATQxEhdCogHyZCyzTovKtxRb-U8TNGPzbSdj4eOIu2HQ&oe=67CF596B"></div>
+
+<div class="vimg2"> <img  class="v-img" src="https://scontent.cdninstagram.com/v/t51.71878-15/476512913_8407852675984914_2409031279706960272_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=1-7&_nc_sid=18de74&_nc_ohc=-bJ6873SfWcQ7kNvgGKodYA&_nc_oc=AdgwGHOXDivrWaX2VS7Pud5HxxiY-4gSkDiqQz6cEB70EJ-G8F3YwQVeyCtY_nHIv6c&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AaXPJGi2AdjbU9ulbxkAiH4&oh=00_AYC1zKEJGlg8ptIilj8Gfvcqm0HecKBIE-xquUpTw3-cmA&oe=67CF3930"></div>
+</div>
+
+<div class="footer-section">
+    
+   <div class="cc">
+    <h4 class="cc1">Customer Care</h4>
+    <p class="p2">FAQ</p>
+    <p class="p2">Shipping Policy</p>
+    <p class="p2">Refund Policy</p>
+    <p class="p2">Cancellation Policy</p>
+    <p class="p2">Privacy Policy</p>
+    <p class="p2">Terms of Service</p>
+    <p class="p2">Contact Information</p>
+    <p class="p2">Wild forest honey certificate</p>
+    <p class="p2">Dark Forest Honey Certificate</p>
+
+   </div> 
+   <div class="contact">
+    <h4 class="cont">Contact Info</h4>
+    <p class="p2">Trade Name : VAARADHI FARMS PRIVATE LIMITED</p>
+    <p class="p2">Email Support : vaaradhifarms@gmail.com</p>
+    <p class="p2">Customer Care Number :</p>
+    <p class="p2">+91 89770 21193</p>
+    <p class="p2">+91 89770 21197</p>
+    <p class="p2">Customer Support Timings : 10:30am to 6:30pm</p>
+    <p class="p2">Address : Manikonda, Hyderabad, Telangana , Pin - 500089</p>
+    <p class="p2">FSSAI : 23623028001252</p>
+    <p class="p2">Legal Name : VAARADHI FARMS PRIVATE LIMITED</p>
+    <div class="address">
+    <p class="p3">
+        Registered Address: Building No./Flat No.: Sy. No. 81,Plot No-161,Sector-1-Block-2</p>
+    <p class="p3">Name Of Premises/Building: Alkapur Township</p>
+    <p class="p3">Road/Street: Road No.25</p>
+    <p class="p3">Locality/Sub Locality: Neknampur</p>
+    <p class="p3">City/Town/Village: Hyderabad</p>
+    <p class="p3">District: Rangareddy</p>
+    <p class="p3">State: Telangana</p>
+    <p class="p3">PIN Code: 500089</p></div>
+
+   </div>
+   <div>
+    <i class="fa fa-instagram insta" ></i>
+  <div class="end"><p>© 2025, Vaaradhi Farms. Built by Ecommified.in</p></div>  
+   </div>
+   
+</div>
+
+
+ </body>
+</html>
