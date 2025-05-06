@@ -69,11 +69,17 @@
             
             .header__logo-image{
                 padding-left: 40px;
+                width: 200px;
+                height: 100px;
             }
             .header__menu{
                 display: flex;
                 gap: 40px;
                 
+            }
+            .img-large{
+              width: 1500px;
+              height: 550px;
             }
             .menu_1{
                 color: black;
@@ -270,6 +276,12 @@
     height:325px;     
     border-radius: 8px;
    }
+   .oils{
+    display:grid;
+        margin-left: 30px;
+        margin-right: 50px;
+        justify-content: end;
+   }
 
    .images-scrollbar{
     display: grid;
@@ -385,6 +397,12 @@
         height: 390px;
         margin-left: 100px;
         margin-right: 30px;
+    }
+    .oil-img{
+      border-radius: 40px;
+     display: inline-block;
+    width: 730px;
+    height: 630px;
     }
     .section-full{
         display: flex;
@@ -754,7 +772,171 @@ font-weight: bolder;
     margin-left: 60px;
     color: rgba(0, 0, 0, 0.612);
   }
+  @media screen and (max-width: 768px) {
+  /* Header stays horizontal but adjusts spacing */
+  body{
+    overflow-x: hidden;
+  }
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
 
+  .logo {
+    flex: 1;
+    max-width: 120px; /* adjust logo size */
+  }
+
+  .header__menu {
+    display: none;
+  }
+  .descript{
+    margin-top: 0;
+    
+  }
+  .add{
+    width: 18%;
+  }
+ 
+
+  .header__icons {
+    flex-basis: 100%;
+     margin-left: 330px;
+    margin-top: 10px;
+  }
+  .header__logo-image{
+    width: 200px;
+  }
+  .img-large{
+    width: 500px;
+    height: 200px;
+  }
+  .img-large1{
+    width: 500px;
+    height: 220px;
+  }
+
+  /* Image grids shrink on mobile */
+  .image-grid,
+  .images-scrollbar,
+  .videos
+   {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+  }
+  .oil-img{
+    width: 450px;
+    height: 250px;
+    margin-left: 20px;
+  }
+
+  .img,
+  .imgscroll,
+  .honey-img,
+  .honey-img1,
+  .productimg,
+  .sweet,
+  .salt {
+    width: 100%;
+    height: auto;
+  }
+  .oils{
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+    grid-template-columns: 1fr;
+  }
+  .gridimg1{
+    width: 440px;
+  }
+  .ss{
+    display: none;
+  }
+  .ssimages{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 300px;
+  }
+
+  .productimg {
+    max-width: 400px;
+    max-height: 450px;
+   
+  }
+  .honey-img{
+    width: 400px;
+    height: 470px;
+   
+  }
+  .about-us{
+    width: 87%;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  /* Typography scaling */
+  .number {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+
+  .product-head {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  /* Buttons resize */
+  .view-all-button,
+  .view-all-products
+   {
+    width: 29%;
+    font-size: 14px;
+    margin: 15px 50px;
+  }
+
+  /* Grid components collapse into single column */
+  .grid-2,
+  .about-info,
+  .grid-test,
+  .product-data {
+    grid-template-columns: 1fr;
+    font-size: 10px;
+  }
+  .footer-section {
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    height: 1500px;
+    text-align: center;
+   
+   
+  }
+  .content{
+    font-size: 14px;
+    width: 80%;
+  }
+  .test-1{
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+  .test-3{
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .test-2{
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .faq-section {
+    grid-template-columns: 1fr;
+    font-size: 10px;
+  }
+  }
+  
        </style>
    
  </head>
@@ -785,7 +967,7 @@ font-weight: bolder;
             <div class="header-section" >
                 <div class="header">
                     <div class="header__logo"> 
-                      <img src="//vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp;width=1330" alt="" srcset="//vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp;width=300 300w, //vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp;width=450 450w" width="150" height="100" sizes="150px" class="header__logo-image">
+                      <img src="//vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp" alt="" srcset="//vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp;width=300 300w, //vaaradhifarms.com/cdn/shop/files/Asset_1_2x_399eef15-89ca-42cd-ac92-8f75b5e60552.png?v=1685440038&amp;width=450 450w"  class="header__logo-image">
                     </div>
                     <div class="header__menu">
                      <a href="#" class="menu_1">Home</a>
@@ -820,7 +1002,7 @@ font-weight: bolder;
             </div>
            
                  <div class="img-large">
-                 <img src="https://vaaradhifarms.com/cdn/shop/files/varadhi_farms_honey_-v1_-_web_final.jpg?v=1733085382&width=1520">  
+                 <img class="img-large1" src="https://vaaradhifarms.com/cdn/shop/files/varadhi_farms_honey_-v1_-_web_final.jpg?v=1733085382&width=1520">  
                 </div>
          
         <div class="decription">
@@ -946,14 +1128,8 @@ font-weight: bolder;
     
         <img class="salt" src="https://vaaradhifarms.com/cdn/shop/files/seeds_collection_image_varadhi_farms-1.jpg?v=1733116981&width=1000">
     </div>
-        <div class="oils" style="display:grid;
-        margin-left: 30px;
-        margin-right: 50px;
-        justify-content: end;">
-            <img style="border-radius: 40px;
-                       display: inline-block;
-                         width: 730px;
-                         height: 630px;" src="https://vaaradhifarms.com/cdn/shop/files/Varadhi_farms_v1_oil_section_image-3.jpg?v=1733085809&width=600 ">
+        <div class="oils">
+            <img class="oil-img" src="https://vaaradhifarms.com/cdn/shop/files/Varadhi_farms_v1_oil_section_image-3.jpg?v=1733085809&width=600 ">
          </div>
          
     
